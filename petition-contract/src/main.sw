@@ -201,6 +201,7 @@ impl Info for Contract {
     fn total_campaigns() -> u64 {
         storage.total_campaigns.read()
     }
+    
 
     #[storage(read)]
     fn user_campaign_count(user: Identity) -> u64 {
